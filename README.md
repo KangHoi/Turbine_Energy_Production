@@ -90,8 +90,9 @@ accuracy(svm.pred, valid.df$TEY)
 
 
 #### 4) R 프로그램 구현 결과
-<br>
+
 **A. Linear kernal 활용**
+<br>
 ⅰ. kernel 적용
 - best parameters: cost 16
 - best performance: 0.9024026
