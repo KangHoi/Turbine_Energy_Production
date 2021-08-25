@@ -41,6 +41,7 @@
 
 #### 3) R 프로그램 구현
 **A. Linear kernal 활용**
+<br>
 ⅰ. kernel 적용
 ```
 obj<- tune(svm, TEY~., data = train.df, kernel="linear", 
@@ -56,6 +57,7 @@ accuracy(svm.pred, valid.df$TEY)
 ```
 
 **B. Radial kernal 활용**
+<br>
 ⅰ. kernel 적용
 ```
 obj<- tune(svm, TEY~., data = train.df, kernel="radial",
@@ -71,6 +73,7 @@ accuracy(svm.pred, valid.df$TEY)
 ```
 
 **C. Sigmoid kernal 활용**
+<br>
 ⅰ. kernel 적용
 ```
 obj<- tune(svm, TEY~., data = train.df, kernel="sigmoid",
@@ -87,6 +90,7 @@ accuracy(svm.pred, valid.df$TEY)
 
 
 #### 4) R 프로그램 구현 결과
+<br>
 **A. Linear kernal 활용**
 ⅰ. kernel 적용
 - best parameters: cost 16
@@ -108,6 +112,7 @@ accuracy(svm.pred, valid.df$TEY)
 
 
 **B. Radial kernal 활용**
+<br>
 ⅰ. kernel 적용
 - best parameters: gamma 0.015625  cost 32
 - best performance: 0.5796032
@@ -126,7 +131,8 @@ accuracy(svm.pred, valid.df$TEY)
   |--|----|---|---|----|
   |0.02453148|0.73241|0.5694676|0.1350609|0.4302597|
   
-  **A. Linear kernal 활용**
+  **C. Sigmoid kernal 활용**
+  <br>
 ⅰ. kernel 적용
 - best parameters: gamma 0.001953125  cost 1  ceof 1
 - best performance: 1.216222
