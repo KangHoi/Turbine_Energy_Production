@@ -132,7 +132,7 @@ accuracy(svm.pred, valid.df$TEY)
   |--|----|---|---|----|
   |0.02453148|0.73241|0.5694676|0.1350609|0.4302597|
   
-  **C. Sigmoid kernal 활용**
+ **C. Sigmoid kernal 활용**
   <br>
 ⅰ. kernel 적용
 - best parameters: gamma 0.001953125  cost 1  ceof 1
