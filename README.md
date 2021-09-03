@@ -18,7 +18,7 @@
 
 ### 2. 연구 진행
 #### 1) Data Set 소개
-가스 터빈에서 1시간 동안 집계된 11개의 센서 측정 값 36733개가 시간 순으로 정렬되어 있다. 아래와 같은 값에서 터빈 에너지 생산량(TEY)을 y값으로 설정하고 나머지는 변수로 지정한다.
+가스 터빈에서 1시간 동안 집계된 10개의 센서 측정 값 36733개가 시간 순으로 정렬되어 있다. 아래와 같은 값에서 터빈 에너지 생산량(TEY)을 y값으로 설정하고 나머지는 변수로 지정한다.
 |센서|단위|최소|최대|평균|
 |----|----|----|----|----|
 |주변 온도 (AT)|℃|-6.23|37.10|17.71|
@@ -29,7 +29,7 @@
 |터빈 입구 온도 (TIT)|°C|1000.85|1100.89|1081.43|
 |터빈 작동 후 온도 (TAT)|°C|511.04|550.61|546.16|
 |컴프레셔 배출 압력 (CDP)|mbar|9.85|15.16|12.06|
-|터빈 에너지 생산량 (TEY)|MWH|100.02|179.50|133.51|
+|__터빈 에너지 생산량 (TEY)|MWH|100.02|179.50|133.51|__
 |일산화탄소 (CO)|Mg/|0.00|44.10|2.37|
 
 
@@ -98,12 +98,12 @@ accuracy(svm.pred, valid.df$TEY)
 - best performance: 0.9024026
 
 ⅱ. 정확성 검토
-- Parameters: 
-  SVM-Type: eps-regression
-  SVM-Kernel: linear
-  cost: 16
-  gamma: 0.1
-  epsilon: 0.1
+- Parameters<br>
+  SVM-Type: eps-regression<br>
+  SVM-Kernel: linear<br>
+  cost: 16<br>
+  gamma: 0.1<br>
+  epsilon: 0.1<br>
   
 - Number of Support Vectors: 2558
 - Test set
@@ -119,12 +119,12 @@ accuracy(svm.pred, valid.df$TEY)
 - best performance: 0.5796032
 
 ⅱ. 정확성 검토
-- Parameters: 
-  SVM-Type: eps-regression
-  SVM-Kernel: radial
-  cost: 32
-  gamma: 0.015625
-  epsilon: 0.1
+- Parameters<br>
+  SVM-Type: eps-regression<br>
+  SVM-Kernel: radial<br>
+  cost: 32<br>
+  gamma: 0.015625<br>
+  epsilon: 0.1<br>
   
 - Number of Support Vectors: 914
 - Test set
@@ -140,13 +140,13 @@ accuracy(svm.pred, valid.df$TEY)
 - best performance: 1.216222
 
 ⅱ. 정확성 검토
-- Parameters: 
-  SVM-Type: eps-regression
-  SVM-Kernel: sigmoid
-  cost: 1
-  gamma: 0.001953125
-  ceof.0: 0
-  epsilon: 0.1
+- Parameters<br>
+  SVM-Type: eps-regression<br>
+  SVM-Kernel: sigmoid<br>
+  cost: 1<br>
+  gamma: 0.001953125<br>
+  ceof.0: 0<br>
+  epsilon: 0.1<br>
   
 - Number of Support Vectors: 3286
 - Test set
