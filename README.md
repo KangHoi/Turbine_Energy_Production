@@ -40,7 +40,7 @@
 - e1071: SVR 또는 SVM 구현
 
 #### 3) R 프로그램 구현
-**A. Linear kernal 활용**
+**A. Linear kernel 활용**
 <br>
 ⅰ. kernel 적용
 ```
@@ -56,7 +56,7 @@ svm.pred <- predict(svm.model, valid.df)
 accuracy(svm.pred, valid.df$TEY)
 ```
 
-**B. Radial kernal 활용**
+**B. Radial kernel 활용**
 <br>
 ⅰ. kernel 적용
 ```
@@ -72,7 +72,7 @@ svm.pred <- predict(svm.model, valid.df)
 accuracy(svm.pred, valid.df$TEY)
 ```
 
-**C. Sigmoid kernal 활용**
+**C. Sigmoid kernel 활용**
 <br>
 ⅰ. kernel 적용
 ```
@@ -91,7 +91,7 @@ accuracy(svm.pred, valid.df$TEY)
 
 #### 4) R 프로그램 구현 결과
 
-**A. Linear kernal 활용**
+**A. Linear kernel 활용**
 <br>
 ⅰ. kernel 적용
 - best parameters: cost 16
@@ -112,7 +112,7 @@ accuracy(svm.pred, valid.df$TEY)
   |-0.07724102|0.9604588|0.7584413|-0.0654235|0.5716215|
 
 
-**B. Radial kernal 활용**
+**B. Radial kernel 활용**
 <br>
 ⅰ. kernel 적용
 - best parameters: gamma 0.015625  cost 32
@@ -133,7 +133,7 @@ accuracy(svm.pred, valid.df$TEY)
   |0.02453148|0.73241|0.5694676|0.1350609|0.4302597|
   
   
- **C. Sigmoid kernal 활용**
+ **C. Sigmoid kernel 활용**
   <br>
 ⅰ. kernel 적용
 - best parameters: gamma 0.001953125  cost 1  ceof 1
